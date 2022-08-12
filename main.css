@@ -36,7 +36,6 @@
     margin-top: 5em;
     margin-left: 18em;
     position: relative;
-    animation: fadeIn 2s linear;
 }
 
 @keyframes fadeIn {
@@ -49,6 +48,14 @@
     100% {opacity: 1};
     50% {opacity: 0.5};
     0% {opacity: 0};
+}
+
+.fadeIn {
+    animation: fadeIn 2s linear;
+}
+
+.fadeOut {
+   animation: fadeOut 2s linear;
 }
 
 .modal-content {
@@ -88,4 +95,5 @@
 body {
     background-color: #f5c2a9;
 }
+
 
