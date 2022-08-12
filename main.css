@@ -33,7 +33,16 @@
     background-color: white;
     padding: 5px 10px 60px 10px;
     display: none;
-    position: fixed;
+    margin-top: 5em;
+    margin-left: 18em;
+    position: relative;
+    animation: fadeIn 3s linear;
+}
+
+@keyframes fadeIn {
+    0%, {opacity: 0}
+    50% {opacity: 0.5}
+    100% {opacity: 1}
 }
 
 .modal-content {
