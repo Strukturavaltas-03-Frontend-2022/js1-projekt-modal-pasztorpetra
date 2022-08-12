@@ -1,18 +1,13 @@
 
-const myModal = document.getElementById("myModal");
-const btn = document.getElementById("katt-btn");
-const closeBtn = document.getElementById("close-btn");
+const myModal = document.querySelector(".modal");
+const btn = document.querySelector(".katt");
+const closeBtn = document.querySelector(".close");
 
-btn.onclick = () => {
-    myModal.style.display = "block";
-}
+btn.addEventListener("click", () => {
+    myModal.style.visibility="visible";
+});
 
-closeBtn.onclick = () => {
-    myModal.style.display = "none";
-}
+closeBtn.addEventListener("click", () => {
+    myModal.style.visibility ="hidden";
+});
 
-window.onclick = function (event) {
-    if (event.target == myModal) {
-        myModal.style.display = "none";
-    }
-}

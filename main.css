@@ -13,7 +13,6 @@
     border:none;
     background-color: white;
     font-size: 1.25em;
-    animation: fadeOut 3s linear;
 }
 
 .buttons {
@@ -33,11 +32,11 @@
 .modal {
     background-color: white;
     padding: 5px 10px 60px 10px;
-    display: none;
+    visibility: hidden;
     margin-top: 5em;
     margin-left: 18em;
     position: relative;
-    animation: fadeIn 3s linear;
+    animation: fadeIn 2s linear;
 }
 
 @keyframes fadeIn {
