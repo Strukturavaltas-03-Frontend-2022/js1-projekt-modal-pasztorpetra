@@ -11,31 +11,29 @@
 
 <body>
     <div>
-        <button class="katt">Kattints ide!</button>
+        <button class="katt" id="katt-btn">Kattints ide!</button>
     </div>
 
     <!--MODAL-->
-    <div class="modal">
+    <div class="modal" id="myModal">
         <!--Header-->
         <header>
             <div>
-                <button class="close">X</button>
+                <button class="close" id="close-btn">X</button>
             </div>
         </header>
 
         <!--Section-->
         <section>
-                <div id="myModal">
-                    <div class="modal-content">
-                        <h3>CSSScript.com</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                <div class="modal-content">
+                    <h3>CSSScript.com</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
                             labore et dolore magna aliqua. Lectus arcu bibendum at varius. Adipiscing diam donec
                             adipiscing tristique risus. Placerat orci nulla pellentesque dignissim enim. Amet nisl
                             suscipit adipiscing bibendum est ultricies. Malesuada fames ac turpis egestas integer eget
                             aliquet nibh. Amet consectetur adipiscing elit ut. Cursus mattis molestie a iaculis. Id
                             venenatis a condimentum vitae sapien pellentesque habitant. Amet tellus cras adipiscing enim
                             eu turpis egestas pretium. Erat pellentesque adipiscing commodo elit at.</p>
-                    </div>
                 </div>
         </section>
 
@@ -49,7 +47,17 @@
 
     <script>
         const myModal = document.getElementById("myModal");
-        myModal.addeventlistener("click", () => );
+        const btn = document.getElementById("katt-btn");
+        const closeBtn = document.getElementById("close-btn");
+
+        btn.onclick = () => {
+            myModal.style.display = "block";
+        }
+
+        closeBtn.onclick = () => {
+            myModal.style.display = "none";
+        }
+        
     </script>
 </body>
 

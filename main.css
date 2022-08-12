@@ -32,7 +32,8 @@
 .modal {
     background-color: white;
     padding: 5px 10px 60px 10px;
-    /*display: none;*/
+    display: none;
+    position: fixed;
 }
 
 .modal-content {
